@@ -1,4 +1,4 @@
-var express = require("express");
+var express = require('express');
 var router = express.Router();
 const isAuthenticated = true;
 router.all("*", (req, res, next) => {
@@ -11,7 +11,7 @@ router.all("*", (req, res, next) => {
   })
 }
 })
-router.get("/:id", (req, res, next) => {
+router.get("/", (req, res, next) => {
   res.json({
     body: req.body,
     params: req.params,

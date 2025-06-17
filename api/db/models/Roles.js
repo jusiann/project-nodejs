@@ -23,5 +23,5 @@ class Roles extends MONGOOSE.Model {
 
 }
 
-schema.loadClass(Users);
+schema.loadClass(Roles);
 module.exports = MONGOOSE.model("roles", schema);
